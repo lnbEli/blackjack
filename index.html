@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Blackjack</title>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="topBar">
+            <div id="headingDiv">
+                <img class="logo" src="playingcards/smoothLogo.png">
+                <div id="scoreBox">
+                    <h2 id="score" >Dealer Score<br><span id="dealersGamesWon">0</span></h2>
+                    <h2 id="score" >Gambler Score<br><span id="gamblersGamesWon">0</span></h2>
+                </div>
+            </div>
+        </div>
+        <div id="dealerScoreAndCards">
+            <h2 class="players">Dealer<br><br><span id="dealersCards"></span><p id="dealersScore"></span></p></h2>
+        </div>
+        <div id="playersScoreAndCards">
+            <h2 class="players">Gambler<br><br><span id="gamblersCards"></span><p id="gamblersScore"></span></p></h2>
+        </div>
+        <div id="buttons">
+            <button  class="button" id="deal" onclick="onClickPlay()">Deal</button>
+            <button  class="button" id="hit" disabled onclick="onClickHit()">Hit</button>
+            <button  class="button" id="stay" disabled onclick="onClickStay()">Stay</button>
+        </div>
+    </div>
+</body>
